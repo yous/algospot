@@ -1,5 +1,7 @@
 # ALGOSPOT
 
+[![Build Status](https://travis-ci.org/yous/algospot.svg?branch=master)](https://travis-ci.org/yous/algospot)
+
 Solutions of <https://algospot.com>.
 
 ## Requirements
