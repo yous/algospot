@@ -1,11 +1,12 @@
-RSpec.describe 'MERCY' do
-  before(:example) { $stdout = StringIO.new }
-  after(:example) { $stdout = STDOUT }
+RSpec.describe 'MERCY', :mocked_stdout do
+  subject { 'mercy' }
+  let(:input) { <<END }
+2
+END
+  let(:output) { <<END }
+Hello Algospot!
+Hello Algospot!
+END
 
-  it 'runs with example' do
-    allow($stdin).to receive(:gets).and_return("2\n")
-    require 'mercy'
-    expect($stdout.string).to eq("Hello Algospot!\n" \
-                                 "Hello Algospot!\n")
-  end
+  it_behaves_like 'a problem'
 end
