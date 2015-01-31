@@ -10,6 +10,8 @@ Ruby 1.9.3p484 (2013-11-22 revision 43786) [x86_64-linux]
 
 ## Solving problems
 
+To look into each problem, find it in <https://algospot.com>. For example, you can see the problem 'MISPELL' at <https://algospot.com/judge/problem/read/MISPELL>.
+
 Use `rake new_problem[TITLE]` to create `spec/title_spec.rb`. It gets the example input and output like this:
 
 ``` sh
