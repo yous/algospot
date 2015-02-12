@@ -8,7 +8,7 @@ RSpec.shared_examples 'a problem' do
     allow(ARGF).to receive(:each_slice) do |*args, &block|
       mocked_input.each_slice(*args, &block)
     end
-    require subject
+    require_relative "../../problems/#{subject}"
     expect($stdout.string).to eq(output)
   end
 end
